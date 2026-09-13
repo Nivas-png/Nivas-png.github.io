@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #171717;
+  line-height: 1.6;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.logo span {
+  color: #555;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.hero {
+  min-height: 88vh;
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+  background: #fff;
+}
+
+.eyebrow,
+.section-label {
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #666;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 1;
+  margin: 15px 0;
+}
+
+.hero h1 span {
+  display: block;
+}
+
+.hero h2 {
+  font-size: clamp(22px, 3vw, 34px);
+  margin-bottom: 20px;
+}
+
+.hero p:not(.eyebrow) {
+  max-width: 650px;
+  color: #555;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.primary {
+  background: #111;
+  color: #fff;
+}
+
+.secondary {
+  border: 1px solid #ccc;
+  color: #111;
+  background: #fff;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card img {
+  width: min(380px, 100%);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid #ddd;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+}
+
+.section {
+  padding: 90px 8%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.15;
+  margin: 12px 0 20px;
+}
+
+.section-intro {
+  max-width: 850px;
+  color: #555;
+  font-size: 18px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+}
+
+.card h3 {
+  margin: 14px 0 8px;
+}
+
+.card p,
+.project p,
+.timeline p,
+.goal p,
+.note {
+  color: #666;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+
+.project {
+  margin-top: 35px;
+  background: #fff;
+  padding: 32px;
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.project h3 {
+  font-size: 26px;
+  margin: 6px 0 10px;
+}
+
+.project-tag {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+}
+
+.project-status {
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.timeline {
+  border-left: 2px solid #ddd;
+  padding-left: 25px;
+  margin-top: 30px;
+}
+
+.timeline-item span {
+  font-size: 12px;
+  font-weight: 800;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.timeline-item h3 {
+  margin: 5px 0;
+  font-size: 23px;
+}
+
+.goal {
+  background: #111;
+  color: #fff;
+  max-width: none;
+}
+
+.goal .section-label,
+.goal p {
+  color: #bbb;
+}
+
+.goal h2 {
+  max-width: 900px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.github {
+  display: inline-block;
+  margin: 12px 0 20px;
+  color: #111;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #ddd;
+  color: #666;
+  background: #fff;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 16px 5%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 6%;
+    text-align: center;
+  }
+
+  .hero p:not(.eyebrow) {
+    margin: auto;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .section {
+    padding: 70px 6%;
+  }
+}
