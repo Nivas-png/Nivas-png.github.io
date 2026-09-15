@@ -9,3 +9,14 @@ Personal portfolio website for Nivas S, a first-year B.Tech CSE (Core) student a
 
 ## GitHub Pages
 Upload these files to a GitHub repository and enable GitHub Pages from the repository's Settings > Pages section.
+## C Programming Practice
+
+This repository contains basic C programs created while learning programming fundamentals.
+
+### Programs
+
+- Even or Odd Number
+- Factorial of a Number
+- Greatest Number
+- Positive or Negative Number
+- Student Details
